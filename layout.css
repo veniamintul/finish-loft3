@@ -1,0 +1,47 @@
+body {
+  height: 100%; }
+
+html {
+  height: 100%;
+  font-size: 16px; }
+
+body {
+  font-family: "Alegreya Sans","Play",sans-serif;
+  line-height: 1.42;
+  position: relative; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%; }
+
+.container {
+  margin: 0 auto;
+  background: #ffff;
+  width: 1110px; }
+
+footer {
+  position: relative; }
+
+/*# sourceMappingURL=layout.css.map */
+
+/*# sourceMappingURL=layout.css.map */
