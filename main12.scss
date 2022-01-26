@@ -311,12 +311,12 @@ $red:#E01F3D;
     margin-top: 0;
     min-height: 59px;
     max-width: 700px;
-    padding: 180px 180px;
+    //padding: 180px 180px;
     
   }
 
   .team__headline{
-    margin-left: -7rem;
+    margin-left: 18rem;
   }
 
   .team__box{
@@ -345,6 +345,48 @@ $red:#E01F3D;
 
 } 
 
+}
+
+
+
+                      //slider для планшета
+ @media (max-width: 786px){
+html{font-size: 13px;}
+  
+  .slider {
+height: 100vh;
+max-width: 786px;
+position: relative;
+display: flex;
+/* justify-content: space-between; */
+  }
+  
+                        
+  .slider__pictures {
+overflow: hidden;
+height: 100%;
+width: 100%;
+margin-left: -20px;
+  }
+                        
+  .slider__block {
+width: 18.75rem;
+height: 100vh;
+display: flex;
+position: absolute;
+/* justify-content: end; */
+/* align-items: end; */
+margin-left: 482px;
+                        }
+                        
+.slider__text__one {
+color: #fff;
+transform: rotate(-90deg);
+margin-top: 12.5rem;
+margin-left: -72px;
+white-space: nowrap;
+}
+                        
 }
 
 
@@ -483,30 +525,43 @@ $red:#E01F3D;
                     //  footer для планшета
 
 
-@media (width:768px){        //почему у меня не работает при max-width местоположение разделов футера ?
+@media (max-width:768px){        //почему у меня не работает при max-width местоположение разделов футера ?
   html{font-size: 13px;}     //как сделать адаптив для футера?
   .container{ 
     width: 700px;
   }
+  .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20px);
+  align-items: center;
+  height: 110px; 
+  flex-direction:row;
+}
 
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25rem;
-    align-items: center; }
-  
-  .footer__col {
-    display: flex;
-    flex-direction: column; }
-  
-  .footer__contacts {
-    display: flex; }
+.footer__col{
+  display: flex;
+  flex-direction: column;
+} 
+
+
+
+.footer__contacts{
+  display: flex;
+}
+
+
+
+
+
 
   
   
   
   .footer__col--align--right {
-    display: flex; }
+    display: flex;
+    justify-content: flex-end; 
+   }
   
   .socials {
     margin-right: 3.125rem;
@@ -588,7 +643,11 @@ $red:#E01F3D;
 @media (max-width:480px){
   html{font-size: 12px;}
 
-
+  .pochemu {
+    display: flex;
+    min-width: 0;
+    min-height: 800px;
+}
 
   .pochemu__box{
     margin-top: 0;
@@ -622,21 +681,29 @@ $red:#E01F3D;
     display: flex;
     flex-direction:column;
     max-width: 470px;
-    min-width: 320px;
+    min-width: 400px;
   }
 
 
   .pochemu__item{
-    display: flex;              //почему у меня здесь не срабатывает flex (адаптив для телефона
-    padding: 0;
-    margin: 0 ;
+    display: flex; 
+    align-items: center;
+    flex-direction: row;             //почему у меня здесь не срабатывает flex (адаптив для телефона
+    //padding: 0;
+    //margin: 0 ;
+    position: relative;
+    max-width: 400px;
   }
 
   .pochemu__item__text{
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+    //flex-direction: column;
+    //padding: 0;
+    //margin: 0;
+    position: absolute;
+    align-items: center;
+    width: 200px;
+    margin-left: 130px;
   }
 
   .circle{
@@ -648,6 +715,9 @@ $red:#E01F3D;
     background: #F2F5F4;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    margin-right: 12px;
+    
   }
 
 
@@ -676,6 +746,56 @@ $red:#E01F3D;
     }
 
  
+    .triegle__black__one__tablets{
+     // border: transparent solid rem(30px);
+     // border-right: black solid rem(30px);
+     // border-left-width: 0;
+     // height: 0;
+     // width: 0;
+     // margin-right: rem(10px);
+      position: relative;
+      
+    }
+    
+    .triegle__black__one__tablets:after{
+      content: "";
+     // border: transparent solid rem(30px);
+    //  border-right: #F8FAF9 solid rem(30px);
+     // border-left-width: 0;
+     // height: 0;
+    //  width: 0;
+      position: absolute;
+      top:-23px;      
+      left: rem(2px);               
+    }
+    
+    
+    .triegle__black__two__tablets{
+     // border: transparent solid rem(30px);
+     // border-left: black solid rem(30px);
+     // border-right-width: 0;
+     // height: 0;
+     // width: 0;
+     // margin-left: rem(10px);
+      position: relative;
+    }
+    
+    .triegle__black__two__tablets:after{
+      content: "";
+     // border: transparent solid rem(30px);
+     // border-left: #F8FAF9 solid rem(30px);
+      //border-right-width: 0;
+      //height: 0;
+     // width: 0;
+      position: absolute;
+      top:-23px;        
+      left: -25px;      
+    }
+
+    .shop__button {
+      padding: 20px 35px;
+  }
+
   
 
   }
@@ -709,6 +829,65 @@ $red:#E01F3D;
 }
 }
 
+                       //team (команда) дляя телефона
+
+@media (max-width: 480px){
+.team {
+    margin-top: 0;
+    min-height: 59px;
+    max-width: 700px;
+    padding: 40px 40px;
+}
+.team__headline {
+  margin-left: 5rem;
+}
+
+
+
+                      //slider для телефона
+@media (max-width: 480px){
+.slider {
+  height: 100vh;
+  max-width: 480px;
+  position: relative;
+  display: flex;
+  /* justify-content: space-between; */
+}
+}
+
+.slider__pictures {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.slider__block {
+  width: 18.75rem;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  /* justify-content: end; */
+  /* align-items: end; */
+  margin-left: 240px;
+}
+
+.slider__text__one {
+  color: #fff;
+  transform: rotate(
+-90deg
+);
+  margin-top: 12.5rem;
+  margin-left: -72px;
+  white-space: nowrap;
+}
+
+
+
+
+
+}
+                          //feedback (отзывы) для телефона
 
 @media (max-width:480px){
   html{font-size: 12px;}
@@ -756,10 +935,20 @@ $red:#E01F3D;
   }
  
 }
+                           //zacaz (отзывы) для телефона
+@media (width:480px){ 
 
+.form__row__eight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.zacaz__button__one {
+  padding: 20px 35px 20px 35px;
+}
 
-
-
+}
 
 
 
@@ -772,5 +961,22 @@ $red:#E01F3D;
     justify-content: space-between;
     padding: 1.25rem;
     align-items: center; }
+
+.footer__col{
+  margin-top: -20px;
+  align-items: center;
+}  
+
+.socials {
+  margin-right: 3.125rem;
+  height: 24px;
+  margin-top: 20px;
+}
+
+
+.icon {
+  height: 24px;
+  width: 24px;
+} 
 
 }

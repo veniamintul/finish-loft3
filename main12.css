@@ -1092,7 +1092,7 @@ footer {
   height: 3.4375rem;
   width: 10.3125rem;
   background: #E01F3D;
-  padding: 1.25rem 2.5rem;
+  padding: 20px  45px;
   display: flex;
   align-items: center; }
 
@@ -1514,11 +1514,10 @@ footer {
   .team {
     margin-top: 0;
     min-height: 59px;
-    max-width: 700px;
-    padding: 180px 180px; }
+    max-width: 700px; }
 
   .team__headline {
-    margin-left: -7rem; }
+    margin-left: 18rem; }
 
   .team__box {
     display: flex;
@@ -1538,6 +1537,38 @@ footer {
     height: 0rem;
     width: 0rem;
     content: ""; } }
+@media (max-width: 786px) {
+  html {
+    font-size: 13px; }
+
+  .slider {
+    height: 100vh;
+    max-width: 786px;
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */ }
+
+  .slider__pictures {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-left: -20px; }
+
+  .slider__block {
+    width: 18.75rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    /* justify-content: end; */
+    /* align-items: end; */
+    margin-left: 482px; }
+
+  .slider__text__one {
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-top: 12.5rem;
+    margin-left: -72px;
+    white-space: nowrap; } }
 @media (max-width: 768px) {
   html {
     font-size: 13px; }
@@ -1629,7 +1660,7 @@ footer {
 
   .zacaz__button__one {
     padding: 20px 40px 20px 40px; } }
-@media (width: 768px) {
+@media (max-width: 768px) {
   html {
     font-size: 13px; }
 
@@ -1640,7 +1671,9 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1.25rem;
-    align-items: center; }
+    align-items: center;
+    height: 110px;
+    flex-direction: row; }
 
   .footer__col {
     display: flex;
@@ -1650,7 +1683,8 @@ footer {
     display: flex; }
 
   .footer__col--align--right {
-    display: flex; }
+    display: flex;
+    justify-content: flex-end; }
 
   .socials {
     margin-right: 3.125rem;
@@ -1697,6 +1731,11 @@ footer {
   html {
     font-size: 12px; }
 
+  .pochemu {
+    display: flex;
+    min-width: 0;
+    min-height: 800px; }
+
   .pochemu__box {
     margin-top: 0;
     min-height: 800px;
@@ -1720,18 +1759,21 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 470px;
-    min-width: 320px; }
+    min-width: 400px; }
 
   .pochemu__item {
     display: flex;
-    padding: 0;
-    margin: 0; }
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    max-width: 400px; }
 
   .pochemu__item__text {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0; }
+    position: absolute;
+    align-items: center;
+    width: 200px;
+    margin-left: 130px; }
 
   .circle {
     content: "";
@@ -1740,7 +1782,9 @@ footer {
     height: 8rem;
     background: #F2F5F4;
     align-items: center;
-    justify-content: center; } }
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 12px; } }
 @media (max-width: 480px) {
   html {
     font-size: 12px; }
@@ -1751,6 +1795,22 @@ footer {
     max-width: 460px; }
     .shop .triegle__black__two__display, .shop .triegle__black__one__display {
       display: none; }
+    .shop .triegle__black__one__tablets {
+      position: relative; }
+    .shop .triegle__black__one__tablets:after {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: 0.125rem; }
+    .shop .triegle__black__two__tablets {
+      position: relative; }
+    .shop .triegle__black__two__tablets:after {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: -25px; }
+    .shop .shop__button {
+      padding: 20px 35px; }
 
   .vipad {
     display: none; }
@@ -1774,6 +1834,44 @@ footer {
 
   .shop__desk {
     text-align: center; } }
+@media (max-width: 480px) {
+  .team {
+    margin-top: 0;
+    min-height: 59px;
+    max-width: 700px;
+    padding: 40px 40px; }
+
+  .team__headline {
+    margin-left: 5rem; } }
+@media (max-width: 480px) and (max-width: 480px) {
+  .slider {
+    height: 100vh;
+    max-width: 480px;
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */ } }
+@media (max-width: 480px) {
+  .slider__pictures {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-left: -20px; }
+
+  .slider__block {
+    width: 18.75rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    /* justify-content: end; */
+    /* align-items: end; */
+    margin-left: 240px; }
+
+  .slider__text__one {
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-top: 12.5rem;
+    margin-left: -72px;
+    white-space: nowrap; } }
 @media (max-width: 480px) {
   html {
     font-size: 12px; }
@@ -1810,6 +1908,15 @@ footer {
   .feedback__content {
     text-align: center; } }
 @media (width: 480px) {
+  .form__row__eight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+
+  .zacaz__button__one {
+    padding: 20px 35px 20px 35px; } }
+@media (width: 480px) {
   html {
     font-size: 12px; }
 
@@ -1818,6 +1925,19 @@ footer {
     height: 150px;
     justify-content: space-between;
     padding: 1.25rem;
-    align-items: center; } }
+    align-items: center; }
+
+  .footer__col {
+    margin-top: -20px;
+    align-items: center; }
+
+  .socials {
+    margin-right: 3.125rem;
+    height: 24px;
+    margin-top: 20px; }
+
+  .icon {
+    height: 24px;
+    width: 24px; } }
 
 /*# sourceMappingURL=main12.css.map */
