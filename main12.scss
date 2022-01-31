@@ -38,7 +38,7 @@ $red:#E01F3D;
 @import "componets/footer";
 @import "componets/paginator";
 @import "componets/figura";
-
+@import "componets/privet";
 
 
 
@@ -56,6 +56,15 @@ $red:#E01F3D;
     .contacts{
     white-space: nowrap;
   } 
+
+ 
+}
+
+@media (max-width:1100px){
+  html{font-size: 14px;}
+  .privet{
+    opacity: 0;
+  }
 }
 
 
@@ -574,7 +583,24 @@ white-space: nowrap;
 
 
 
+  @media (max-width:768px)    {
+    .privet{
+      opacity: 1;                                              //privet
+      
+    }
 
+    .gamburger__one{
+      height:rem(50px);
+      width: rem(50px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s;
+      flex-shrink: 0;
+      margin-left: rem(700px);
+    }
+  }
 
 
 
@@ -979,4 +1005,24 @@ white-space: nowrap;
   width: 24px;
 } 
 
+}
+
+
+@media (max-width:480px)    {
+  .privet{
+    opacity: 1;                                              //privet
+    
+  }
+
+  .gamburger__one{
+    height:rem(50px);
+    width: rem(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    flex-shrink: 0;
+    margin-left: rem(450px);
+  }
 }

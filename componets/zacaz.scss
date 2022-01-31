@@ -228,9 +228,9 @@
       border-radius:50% ;
       height: rem(25px);
       width:rem(25px) ;
-      display: block;
-      margin-right: rem(10px);
       position: relative;
+      margin-right: rem(10px);
+      
       
     }
     
@@ -257,6 +257,7 @@
     .controls__elem{
       cursor: pointer;
      
+     
     }
   
     .controls__checkbox:checked ~.controls__tag{
@@ -264,10 +265,10 @@
       width: rem(13px);
       height: rem(13px);
       border-radius: 50%;
-      display: block;
+      display: flex;
       position: absolute;
-      top: rem(6px);
-      left: -rem(1px);
+      top: 0;
+      left: 0;
       right: 0;
       margin: auto;
       background: red;

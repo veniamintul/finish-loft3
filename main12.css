@@ -67,7 +67,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  display: none; }
+  display: none;
+  transition: 0.5s; }
 
 .gamburger span {
   transition: 1s;
@@ -78,23 +79,15 @@ footer {
   margin: 0.1875rem;
   width: 1.875rem; }
 
-  /*.gamburger:hover .span__one{
-    
-    transform: translate(rem(0px),12px) rotate(45deg);
-    
-  }
-  
+.gamburger:hover .span__one {
+  transform: scale(0); }
 
-  .gamburger:hover .span__two{
-    transform: scale(0)
-    
-  }
+.gamburger:hover .span__two {
+  transform: rotate(45deg); }
 
-  
-  .gamburger:hover .span__three{
-    transform: translate(-rem(1px),-10px) rotate(-45deg);
-    
-  }*/
+.gamburger:hover .span__three {
+  transform: translate(0px, -6px) rotate(-45deg); }
+
 .menu {
   display: block;
   margin-left: 3.125rem;
@@ -658,7 +651,7 @@ footer {
 .slider__pictures {
   /*background: url('slider/Slider.png') no-repeat;
   ╨┐╨╛╤З╨╡╨╝╤Г ╤В╨░╨║ ╤Б╤В╤А╨░╨╜╨╜╨╛ ╨╛╤В╨▒╤А╨░╨╖╨╕╨╗╨░╤Б╤М ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╤П ╨╢╨╡ ╨┐╨╛╤Б╤В╨░╨▓╨╕╨╗ ╨╜╨╡ ╨┐╨╛╨▓╤В╨╛╤А╨╡╨╜╨╕╨╡*/
-  overflow: hidden;
+  object-fit: cover;
   margin-left: -rem(200px); }
 
 .slider__text {
@@ -988,9 +981,8 @@ footer {
   border-radius: 50%;
   height: 1.5625rem;
   width: 1.5625rem;
-  display: block;
-  margin-right: 0.625rem;
-  position: relative; }
+  position: relative;
+  margin-right: 0.625rem; }
 
 /* .servcies__tag{
    cursor: pointer;} /* ╤Н╤В╨╛ ╨╖╨╜╨░╤З╨╕╤В ╨┐╤А╨╕ ╨╜╨░╨▓╨╡╨┤╨╡╨╜╨╕╨╕ ╨╕╨╝╨╡╨╡╨╝ ╤Б╤В╤А╨╡╨╗╨╛╤З╨║╤Г*/
@@ -1016,10 +1008,10 @@ footer {
   width: 0.8125rem;
   height: 0.8125rem;
   border-radius: 50%;
-  display: block;
+  display: flex;
   position: absolute;
-  top: 0.375rem;
-  left: -rem(1px);
+  top: 0;
+  left: 0;
   right: 0;
   margin: auto;
   background: red;
@@ -1321,6 +1313,71 @@ footer {
   display: block;
   transform: rotate(-30deg); }
 
+.privet {
+  display: flex;
+  padding: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #292929;
+  z-index: 10000;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.menu__privet {
+  display: flex;
+  flex-shrink: 2;
+  margin-bottom: 18.75rem; }
+
+.menu__list__privet {
+  display: flex;
+  flex-direction: column; }
+
+.menu__icon__privet {
+  display: flex;
+  margin-top: 1.875rem; }
+
+.menu__icon__privet:last-child {
+  margin-bottom: 0rem; }
+
+.menu__title__privet {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: #fff;
+  text-decoration: none; }
+
+.gamburger__one {
+  height: 3.125rem;
+  width: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  flex-shrink: 0;
+  margin-left: 37.5rem; }
+
+.gamburger__one span {
+  transition: 1s;
+  height: 0.3125rem;
+  border-radius: 0.125rem;
+  background: #fff;
+  display: block;
+  margin: 0.1875rem;
+  width: 1.875rem; }
+
+.gamburger__one:hover .span__one {
+  transform: scale(0); }
+
+.gamburger__one:hover .span__two {
+  transform: rotate(45deg); }
+
+.gamburger__one:hover .span__three {
+  transform: translate(0px, -6px) rotate(-45deg); }
+
 @media (max-width: 1100px) {
   html {
     font-size: 14px; }
@@ -1333,6 +1390,12 @@ footer {
 
   .contacts {
     white-space: nowrap; } }
+@media (max-width: 1100px) {
+  html {
+    font-size: 14px; }
+
+  .privet {
+    opacity: 0; } }
 @media (max-width: 768px) {
   html {
     font-size: 13px; }
@@ -1690,6 +1753,20 @@ footer {
     margin-right: 3.125rem;
     display: flex;
     justify-content: flex-end; } }
+@media (max-width: 768px) {
+  .privet {
+    opacity: 1; }
+
+  .gamburger__one {
+    height: 3.125rem;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    flex-shrink: 0;
+    margin-left: 43.75rem; } }
 @media (max-width: 480px) {
   html {
     font-size: 12px; }
@@ -1939,5 +2016,19 @@ footer {
   .icon {
     height: 24px;
     width: 24px; } }
+@media (max-width: 480px) {
+  .privet {
+    opacity: 1; }
+
+  .gamburger__one {
+    height: 3.125rem;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    flex-shrink: 0;
+    margin-left: 28.125rem; } }
 
 /*# sourceMappingURL=main12.css.map */

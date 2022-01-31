@@ -27,6 +27,7 @@
     align-items: center;
     flex-direction: column;
     display: none;
+    transition: 0.5s;
     
   }
 
@@ -41,23 +42,23 @@
   }
 
 
-  /*.gamburger:hover .span__one{
+  .gamburger:hover .span__one{
     
-    transform: translate(rem(0px),12px) rotate(45deg);
-    
+   
+    transform: scale(0)
   }
   
 
   .gamburger:hover .span__two{
-    transform: scale(0)
     
+    transform:  rotate(45deg);
   }
 
   
   .gamburger:hover .span__three{
-    transform: translate(-rem(1px),-10px) rotate(-45deg);
+    transform: translate(0px,-6px) rotate(-45deg);
     
-  }*/
+  }
 
 
 

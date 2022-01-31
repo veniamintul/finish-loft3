@@ -8,7 +8,8 @@
   .slider__pictures{
     /*background: url('slider/Slider.png') no-repeat;
     почему так странно отбразилась картинка я же поставил не повторение*/
-    overflow: hidden;
+    //overflow: hidden;
+    object-fit: cover;   //полное заполнение блоков
     margin-left: -rem(200px);
      
   }
