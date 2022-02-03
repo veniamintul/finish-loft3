@@ -4,8 +4,8 @@
   top: 112%;
   z-index: 10;
   position: absolute;
-  height: 50px;
-  width: 10px;
+  height: rem(50px);
+  width: rem(10px);
   transform: rotate(20deg);
   background: #C4C4C4; }
 
@@ -17,15 +17,15 @@
   position: absolute;
   height: 0;
   width: 0;
-  border: solid 30px transparent;
-  border-top: 30px solid crimson;
+  border: solid rem(30px) transparent;
+  border-top: rem(30px) solid crimson;
   border-bottom-width: 0;
   transform: rotate(60deg); }
 
 .three__figura {
   background: #292929;
-  width: 24px;
-  height: 24px;
+  width: rem(24px);
+  height: rem(24px);
   transform: rotate(60deg);
   z-index: 10;
   position: absolute;
@@ -36,8 +36,8 @@
 .four__figura {
   background: #868686;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: rem(35px);
+  height: rem(35px);
   z-index: 10;
   position: absolute;
   right: 90%;
@@ -46,19 +46,19 @@
 
 .five__figura__first {
   height: 0;
-  width: 60px;
-  border-right: solid 20px transparent;
-  border-left: solid 20px transparent;
-  border-bottom: 20px solid crimson;
+  width: rem(60px);
+  border-right: solid rem(20px) transparent;
+  border-left: solid rem(20px) transparent;
+  border-bottom: rem(20px) solid crimson;
   position: relative; }
 
 .five__figura__second {
   position: absolute;
   height: 0;
   width: rem(60px);
-  border-right: solid 20px transparent;
-  border-left: solid 20px transparent;
-  border-bottom: 20px solid crimson;
+  border-right: solid rem(20px) transparent;
+  border-left: solid rem(20px) transparent;
+  border-bottom: rem(20px) solid crimson;
   position: relative;
   transform: rotate(180deg); }
 

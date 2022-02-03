@@ -8,7 +8,7 @@
 .slider__pictures {
   /*background: url('slider/Slider.png') no-repeat;
   ╨┐╨╛╤З╨╡╨╝╤Г ╤В╨░╨║ ╤Б╤В╤А╨░╨╜╨╜╨╛ ╨╛╤В╨▒╤А╨░╨╖╨╕╨╗╨░╤Б╤М ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╤П ╨╢╨╡ ╨┐╨╛╤Б╤В╨░╨▓╨╕╨╗ ╨╜╨╡ ╨┐╨╛╨▓╤В╨╛╤А╨╡╨╜╨╕╨╡*/
-  overflow: hidden;
+  object-fit: cover;
   margin-left: -rem(200px); }
 
 .slider__text {

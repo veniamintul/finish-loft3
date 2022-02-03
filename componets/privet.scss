@@ -1,4 +1,7 @@
 .privet{
+  position: fixed;
+  top: 0;
+  left:0;
     display: flex;
     padding: rem(20px);
     justify-content: center;
@@ -6,9 +9,10 @@
     height: 100%;
     width: 100%;
     background:#292929; 
-    z-index: 10000;
+    z-index: 100;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
     
   }
 
@@ -74,20 +78,20 @@
   }
 
 
-  .gamburger__one:hover .span__one{
+  //.gamburger__one:hover .span__one{
     
    
-    transform: scale(0)
-  }
+   // transform: scale(0)
+ // }
   
 
-  .gamburger__one:hover .span__two{
+ // .gamburger__one:hover .span__two{
     
-    transform:  rotate(45deg);
-  }
+ //   transform:  rotate(45deg);
+ // }
 
   
-  .gamburger__one:hover .span__three{
-    transform: translate(0px,-6px) rotate(-45deg);
+ // .gamburger__one:hover .span__three{
+ //   transform: translate(0px,-6px) rotate(-45deg);
     
-  }
+//  }
