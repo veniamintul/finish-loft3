@@ -1,5 +1,6 @@
 body {
-  height: 100%; }
+  height: 100%;
+  margin: 0 auto; }
 
 html {
   height: 100%;
@@ -35,9 +36,10 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100%; }
 
 .container {
+  max-width: 1110px;
+  width: 95%;
   margin: 0 auto;
-  background: #ffff;
-  width: 1110px; }
+  background: #ffff; }
 
 footer {
   position: relative; }
